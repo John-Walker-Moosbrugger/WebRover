@@ -34,6 +34,13 @@ p {
   letter-spacing: 1px;
 }
 
+.text-reg {
+  font-family: 'lato', sans-serif;
+  line-height: 1.8;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
 .subtitle {
   padding: 1rem 3rem;
   font-size: 3.5rem;
@@ -73,11 +80,27 @@ p {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 1.6rem;
-    transition: .1s ease;
+    transition: .15s ease;
     padding: 1rem;
   }
 
 .button__sm:hover {
     transform: translateY(-2px);
+}
+
+.button__lg,
+.button__lg:visited {
+  color: white;
+  background-color: #50465E;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  transition: .15s ease;
+  padding: 1rem 2rem;
+  box-shadow: 0 3px 15px rgba(0,0,0,.3);
+}
+
+.button__lg:hover {
+  box-shadow: 0 0px 0px rgba(0,0,0,0);
 }
 </style>
