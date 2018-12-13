@@ -61,6 +61,8 @@
 
     &__button {
         margin-top: 1.5rem;
+        border: none;
+        cursor: pointer;
     }
 
     &__form {

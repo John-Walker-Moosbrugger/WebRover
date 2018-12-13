@@ -13,6 +13,9 @@
     <div id="team__line"></div>
     <cube-meet-team class="content meetTeam"/>
     <cube-contact class="content contact"/>
+    <div id="footer__line"></div>
+    <cube-footer class="content footer"/>
+    <cube-partners class="content partners"/>
   </div>
 </template>
 
@@ -27,6 +30,8 @@ import NewsPreview from '@/components/NewsPreview.vue'
 import DesignRover from '@/components/DesignRover.vue'
 import MeetTeam from '@/components/MeetTeam.vue'
 import Contact from '@/components/Contact.vue'
+import Footer from '@/components/Footer.vue'
+import Partners from '@/components/Partners.vue'
 
 export default {
   name: 'home',
@@ -39,7 +44,9 @@ export default {
     'cube-news-preview': NewsPreview,
     'cube-design-rover': DesignRover,
     'cube-meet-team': MeetTeam,
-    'cube-contact': Contact
+    'cube-contact': Contact,
+    'cube-footer': Footer,
+    'cube-partners': Partners
 
   }
 }
@@ -49,7 +56,7 @@ export default {
   #home {
     display: grid;
     grid-template-columns: 1fr minmax(60rem, 114rem) 1fr;
-    grid-template-rows: auto 75vh 15rem auto 10rem repeat(2, 30rem) 20rem auto 25rem 13rem 11rem min-content 20rem min-content 30rem min-content 25rem 60rem 10rem;
+    grid-template-rows: auto 75vh 15rem auto 10rem repeat(2, 30rem) 20rem auto 25rem 13rem 11rem min-content 20rem min-content 30rem min-content 25rem 60rem 5rem;
   }
 
   .content {
@@ -97,7 +104,7 @@ export default {
     grid-row-end: 16;
   }
 
-    #team__line {
+  #team__line {
     background-color: #50465E;
     grid-area: 17 / 1 / 18 /4;
   }
@@ -108,5 +115,18 @@ export default {
 
   .contact {
     grid-area: 19 / 2 / 20 / 3;
+  }
+
+  .footer {
+    grid-area: 21 / 2 / 22 / 3;
+  }
+
+  #footer__line {
+    background-color: #50465E;
+    grid-area: 21 / 1 / 22 /4;
+  }
+
+  .partners {
+    grid-area: 22 / 2 / 23 / 3;
   }
 </style>
