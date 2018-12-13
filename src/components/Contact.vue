@@ -8,7 +8,7 @@
                     <input type="text" name="phone" id="ct__phone" class="ct__form--input" placeholder="PHONE">
                     <input type="text" name="email" id="ct__email" class="ct__form--input" placeholder="EMAIL">
                     <textarea name="message" id="ct__message" class="ct__form--input" placeholder="MESSAGE"></textarea>
-                    <button class="button_lg">Submit</button>
+                    <button class="button__lg ct__button">Submit</button>
                 </form>
             </div>
             <div class="ct__right">
@@ -59,6 +59,10 @@
         }
     }
 
+    &__button {
+        margin-top: 1.5rem;
+    }
+
     &__form {
         display: flex;
         flex-direction: column;
@@ -73,7 +77,7 @@
             resize: vertical;
             min-height: 4rem;
             max-height: 20rem;
-            transition: .15s ease-in-out;
+            transition: background-color .15s ease-in-out;
 
             &:focus {
                 background-color: rgb(240, 240, 240);

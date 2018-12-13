@@ -94,6 +94,7 @@ p {
   background-color: #50465E;
   text-decoration: none;
   text-transform: uppercase;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 1.6rem;
   transition: .15s ease;
   padding: 1rem 2rem;
