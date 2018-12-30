@@ -32,7 +32,7 @@
                 </div>
             </div>
         </div>
-        <a href="#" class="button__sm">More <img src="../assets/icons/icon_arrow-dark.png" alt="" class="icon__arrow"></a>
+        <router-link to="/news" class="button__sm">More <img src="../assets/icons/icon_arrow-dark.png" alt="" class="icon__arrow"></router-link>
     </div>
 </template>
 

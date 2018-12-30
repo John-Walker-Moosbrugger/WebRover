@@ -11,7 +11,7 @@
                     <li class="dr_bullet-item text-reg">Slect the right chasis size.</li>
                 </ul>
             </div>
-            <a href="#" class="dr_button button__lg">Configure Here</a>
+            <router-link to="design" class="dr_button button__lg">Configure Here</router-link>
             <p class="dr_button-warn text__min">FOR MORE DETAILED INFORMATION OR A QUOTE, JUST GIVE US A CALL!</p>
         </div>
     </div>

@@ -5,7 +5,7 @@
                 <h2 class="mt__body--title subtitle subtitle__white">Meet Our Team</h2>
                 <p class="mt__body--text">Here at CubeRover the thing that binds us all together is a deep seeded love for space exploration. It’s not uncommon to find a few of us discussing the future of spaceflight over a few drinks and that passion is what drives us to do the work we do here.</p>
             </div>
-            <a href="#" class="button__sm mt__body--btn">Learn More  <img src="../assets/icons/icon_arrow-light.png" alt="" class="icon__arrow"></a>
+            <router-link to="/team" class="button__sm mt__body--btn">Learn More   <img src="../assets/icons/icon_arrow-light.png" alt="right arrow" class="icon__arrow"></router-link>
         </div>
         <div class="mt__img">
             <img src="../assets/home/meetTeam.jpg" alt="Photo of two people assembling a test rig" class="mt__img--content">
