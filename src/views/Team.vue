@@ -26,7 +26,7 @@ export default {
 <style lang="scss" scoped>
 #team {
   display: grid;
-  grid-template-columns: 1fr minmax(60rem, 114rem) 1fr;
+  grid-template-columns: 1fr minmax(6rem, 114rem) 1fr;
 
   &Intro {
     margin-top: 6rem;
