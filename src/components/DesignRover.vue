@@ -1,6 +1,6 @@
 <template>
     <div class="dr_container">
-        <img src="../assets/home/cuberover-exploded.jpg" alt="Image of CubeRover Parts" class="dr_img">
+        <img src="../assets/home/cuberover-exploded.png" alt="Image of CubeRover Parts" class="dr_img">
         <div class="dr_text">
             <h2 class="dr_text-title subtitle subtitle__purple">Design Your CubeRover</h2>
             <div class="dr_text-body">

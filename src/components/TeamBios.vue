@@ -12,15 +12,15 @@
       </template>
     </div>
     <transition name="fade">
-    <div class="lightbox" v-if="lightbox">
-      <div class="lightbox__header">
-        <h2 class="subtitle__purple subtitle lightbox__name">{{ lightboxCard.name }}</h2>
-        <h3 class="subtitle__small subtitle__white lightbox__role text__min">{{ lightboxCard.role }}</h3>
+      <div class="lightbox" v-if="lightbox" >
+        <div class="lightbox__header">
+          <h2 class="subtitle__purple subtitle lightbox__name">{{ lightboxCard.name }}</h2>
+          <h3 class="subtitle__small subtitle__white lightbox__role text__min">{{ lightboxCard.role }}</h3>
+        </div>
+        <img :src="lightboxCard.photoLG" alt="" class="lightbox__img">
+        <p class="lightbox__bio text" v-html="lightboxCard.bio"></p>
+        <a class="lightbox__back text__min" @click="endLightbox()">Back</a>
       </div>
-      <img :src="lightboxCard.photoLG" alt="" class="lightbox__img">
-      <p class="lightbox__bio text" v-html="lightboxCard.bio"></p>
-      <a class="lightbox__back text__min" @click="endLightbox()">Back</a>
-    </div>
     </transition>
   </div>
 </template>
@@ -97,6 +97,13 @@ export default {
       lightbox: false,
       lightboxCard: {}
     }
+  },
+  created () {
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        this.endLightbox()
+      }
+    })
   },
   methods: {
     initLightbox: function (card) {
