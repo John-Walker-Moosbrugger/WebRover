@@ -9,8 +9,8 @@
     <cube-video class="content video"/>
     <cube-news-preview class="content newsPreview"/>
     <div id="news__line"></div>
-    <cube-design-rover class="content designRover"/>
-    <div id="team__line"></div>
+    <!-- <cube-design-rover class="content designRover"/>
+    <div id="team__line"></div> -->
     <cube-meet-team class="content meetTeam"/>
     <cube-contact class="content contact"/>
     <div id="footer__line"></div>
@@ -27,7 +27,7 @@ import CardsIntro from '@/components/CardsIntro.vue'
 import CaseForSmall from '@/components/CaseForSmall.vue'
 import Video from '@/components/Video.vue'
 import NewsPreview from '@/components/NewsPreview.vue'
-import DesignRover from '@/components/DesignRover.vue'
+// import DesignRover from '@/components/DesignRover.vue'
 import MeetTeam from '@/components/MeetTeam.vue'
 import Contact from '@/components/Contact.vue'
 import Footer from '@/components/Footer.vue'
@@ -42,7 +42,7 @@ export default {
     'cube-case-for-small': CaseForSmall,
     'cube-video': Video,
     'cube-news-preview': NewsPreview,
-    'cube-design-rover': DesignRover,
+    // 'cube-design-rover': DesignRover,
     'cube-meet-team': MeetTeam,
     'cube-contact': Contact,
     'cube-footer': Footer,
