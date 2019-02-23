@@ -1,0 +1,46 @@
+// TYPOGRAPHY
+p {
+  font-family: 'lato', sans-serif;
+  line-height: 1.8;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+}
+  
+.text {
+  &-reg {
+    font-family: 'lato', sans-serif;
+    line-height: 1.8;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+  }
+
+  &__min {
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #797979;
+    font-size: 1.4rem;
+  }
+}
+  
+.subtitle {
+  padding: 1rem 3rem;
+  font-size: 3.5rem;
+  width: max-content;
+
+  &__white {
+    color: var(--color-primary);
+    background-color: white;
+    box-shadow: 0 3px 10px rgba(0,0,10px,.2);
+  }
+  &__purple {
+    color: white;
+    background-color: var(--color-primary);
+  }
+}
+  
+.title {
+  &__xs {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+}

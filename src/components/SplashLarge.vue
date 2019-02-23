@@ -21,7 +21,7 @@ export default {
     grid-template-rows: 1fr 25rem;
 
     &__img {
-        height: 65vh;
+        height: 60rem;
         grid-row-start: 1;
         grid-row-end: 3;
         grid-column-start: 1;

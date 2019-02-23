@@ -10,7 +10,7 @@
             Narrow mission profiles on a flexible platform<br>
         </p>
     </div>
-    <img src="../assets/home/man-vs-cuberover.png" alt="" class="img">
+    <img src="../../assets/home/man-vs-cuberover.png" alt="" class="img">
     <div id="purple"></div>
 </div>
 </template>

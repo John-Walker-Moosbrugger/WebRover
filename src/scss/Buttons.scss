@@ -1,0 +1,31 @@
+//BUTTONS
+.button__sm,
+.button__sm:visited  {
+    color: #2A2A2B;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    transition: .15s ease;
+    padding: 1rem;
+  }
+
+.button__sm:hover {
+    transform: translateY(-2px);
+}
+
+.button__lg,
+.button__lg:visited {
+  color: white;
+  background-color: var(--color-primary);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.6rem;
+  transition: .15s ease;
+  padding: 1rem 2rem;
+  box-shadow: 0 3px 15px rgba(0,0,0,.3);
+}
+
+.button__lg:hover {
+  box-shadow: 0 0px 0px rgba(0,0,0,0);
+}
