@@ -1,15 +1,15 @@
 <template>
     <div class="intro">
         <div class="intro__card">
-            <h3 class="intro__card--title">Modular</h3>
+            <h3 class="intro__card--title subtitle subtitle__purple">Modular</h3>
             <p class="intro__card--body">Our modular platforms are configurable to meet your mission requirements. Using our CubeRover system means there is no need to engineer your own rover without sacrificing reliability.</p>
         </div>
         <div class="intro__card">
-            <h3 class="intro__card--title">Lightweight</h3>
+            <h3 class="intro__card--title subtitle subtitle__purple">Lightweight</h3>
             <p class="intro__card--body">When every gram adds cost, a lightweight rover can open a whole new world of possibilities. Our rovers start at below 2kg meaning there is plenty of space for science.</p>
         </div>
         <div class="intro__card">
-            <h3 class="intro__card--title">Standardized</h3>
+            <h3 class="intro__card--title subtitle subtitle__purple">Standardized</h3>
             <p class="intro__card--body">Standardized off-the-shelf components create robust systems you can trust and flexibility you will love. All without compromising your budget goals.</p>
         </div>
     </div>
@@ -31,11 +31,6 @@ export default {
 
         &--title {
             position: relative;
-            background-color: #50465E;
-            width: min-content;
-            padding: 1rem 3rem;
-            font-size: 3.5rem;
-            color: white;
             z-index: 10;
         }
 
@@ -44,8 +39,18 @@ export default {
             padding: 5rem 3rem 3rem 3rem;
             background-color: white;
             box-shadow: 0 3px 10px rgba(0,0,10px,.2);
-            font-size: 1.4rem;
         }
     }
+}
+
+@media only screen and (max-width: 1000px) {
+  .intro {
+    grid-template-columns: 1fr;
+
+    &__card {
+        max-width: 60rem;
+        justify-self: center;
+    }
+  }
 }
 </style>

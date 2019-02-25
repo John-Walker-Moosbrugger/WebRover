@@ -1,6 +1,6 @@
 <template>
   <div class="footer">
-    <div class="footer__nav">
+    <!-- <div class="footer__nav">
       <div class="footer__nav--container">
         <h3 class="footer__nav--header title__xs "><router-link to="/mission" class="footer__nav--link">Mission Profiles</router-link></h3>
         <p class=""><router-link to="/mission/science" class="footer__nav--link">Lunar Science Missions</router-link></p>
@@ -20,7 +20,8 @@
       <div class="footer__nav--container">
         <h3 class="footer__nav--header title__xs "><router-link to="/gallery" class="footer__nav--link">Gallery</router-link></h3>
       </div>
-    </div>
+    </div> -->
+    <div class="footer__contact title__xs">(412) 682-3282 | info@cuberover.com</div>
     <p class="footer__copy">Copyright © 2018 CubeRover</p>
   </div>
 </template>
@@ -49,9 +50,15 @@ export default {}
     }
   }
 
+  &__contact {
+    text-align: center;
+    margin-top: 2.5rem;
+  }
+
   &__copy {
     text-align: center;
     margin-top: 2.5rem;
   }
 }
+
 </style>

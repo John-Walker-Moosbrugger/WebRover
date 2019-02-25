@@ -21,7 +21,8 @@ export default {
     grid-template-rows: 1fr 25rem;
 
     &__img {
-        height: 65vh;
+        max-height: 60rem;
+        max-width: 90%;
         grid-row-start: 1;
         grid-row-end: 3;
         grid-column-start: 1;
@@ -52,5 +53,34 @@ export default {
         top: 0;
         padding: 0 8rem;
     }
+}
+
+//RESPONSIFY
+@media only screen and (max-width: 1100px) {
+  .title {
+    font-size: 7rem;
+
+    &__purple {
+      padding: 0 5rem;
+    }
+
+    &__white {
+      padding: 0 5rem;
+    }
+  }
+
+  .splash-large {
+    grid-template-rows: 1fr 21.5rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .title {
+    font-size: 6rem;
+  }
+
+  .splash-large {
+    grid-template-rows: 1fr 18rem;
+  }
 }
 </style>

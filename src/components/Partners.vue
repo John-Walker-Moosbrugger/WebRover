@@ -13,5 +13,19 @@
   display: flex;
   justify-content: space-between;
   padding: 3rem 0;
+  &__img {
+    height: 5rem;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .partners__img {
+    height: 3rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .partners__img {
+    height: 2.5rem;
+  }
 }
 </style>

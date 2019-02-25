@@ -9,10 +9,10 @@
     <cube-video class="content video"/>
     <cube-news-preview class="content newsPreview"/>
     <div id="news__line"></div>
-    <cube-design-rover class="content designRover"/>
+    <!-- <cube-design-rover class="content designRover"/> -->
     <div id="team__line"></div>
-    <cube-meet-team class="content meetTeam"/>
-    <cube-contact class="content contact"/>
+    <!-- <cube-meet-team class="content meetTeam"/> -->
+    <!-- <cube-contact class="content contact"/> -->
     <div id="footer__line"></div>
     <cube-footer class="content footer"/>
     <cube-partners class="content partners"/>
@@ -23,13 +23,13 @@
 // @ is an alias to /src
 import Header from '@/components/Header.vue'
 import SplashLarge from '@/components/SplashLarge.vue'
-import CardsIntro from '@/components/CardsIntro.vue'
-import CaseForSmall from '@/components/CaseForSmall.vue'
-import Video from '@/components/Video.vue'
+import CardsIntro from '@/components/home/CardsIntro.vue'
+import CaseForSmall from '@/components/home/CaseForSmall.vue'
+import Video from '@/components/home/Video.vue'
 import NewsPreview from '@/components/NewsPreview.vue'
-import DesignRover from '@/components/DesignRover.vue'
-import MeetTeam from '@/components/MeetTeam.vue'
-import Contact from '@/components/Contact.vue'
+// import DesignRover from '@/components/DesignRover.vue'
+// import MeetTeam from '@/components/MeetTeam.vue'
+// import Contact from '@/components/Contact.vue'
 import Footer from '@/components/Footer.vue'
 import Partners from '@/components/Partners.vue'
 
@@ -42,9 +42,9 @@ export default {
     'cube-case-for-small': CaseForSmall,
     'cube-video': Video,
     'cube-news-preview': NewsPreview,
-    'cube-design-rover': DesignRover,
-    'cube-meet-team': MeetTeam,
-    'cube-contact': Contact,
+    // 'cube-design-rover': DesignRover,
+    // 'cube-meet-team': MeetTeam,
+    // 'cube-contact': Contact,
     'cube-footer': Footer,
     'cube-partners': Partners
 
@@ -55,8 +55,8 @@ export default {
 <style lang="scss">
   #home {
     display: grid;
-    grid-template-columns: 1fr minmax(60rem, 114rem) 1fr;
-    grid-template-rows: auto 75vh 15rem auto 10rem repeat(2, 30rem) 20rem auto 25rem 13rem 11rem min-content 20rem min-content 30rem min-content 25rem 60rem 5rem;
+    grid-template-columns: minmax(10rem, 1fr) minmax(20rem, 114rem) minmax(10rem, 1fr);
+    grid-template-rows: auto 65rem 15rem auto 10rem repeat(2, 30rem) 20rem auto 25rem 13rem 11rem min-content 20rem min-content min-content;
   }
 
   .content {
@@ -70,7 +70,6 @@ export default {
 
   .caseForSmall {
     grid-row: 6 / 8;
-
   }
 
   #case {
@@ -129,4 +128,15 @@ export default {
   .partners {
     grid-area: 22 / 2 / 23 / 3;
   }
+
+@media only screen and (max-width: 750px) {
+  #home {
+    grid-template-columns: minmax(5rem, 1fr) minmax(20rem, 114rem) minmax(5rem, 1fr);
+  }
+}
+@media only screen and (max-width: 450px) {
+  #home {
+    grid-template-columns: minmax(2rem, 1fr) minmax(20rem, 114rem) minmax(2rem, 1fr);
+  }
+}
 </style>

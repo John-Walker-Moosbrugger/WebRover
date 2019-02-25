@@ -5,6 +5,11 @@
 </template>
 
 <style lang="scss">
+@import "scss/Variables.scss";
+@import "scss/Typography.scss";
+@import "scss/Buttons.scss";
+
+// GLOBAL RESET
 *,
 *::before,
 *::after {
@@ -21,87 +26,10 @@ html {
 #app {
   line-height: 1.6;
   font-family: 'Source Sans Pro', sans-serif;
-  color: #2A2A2B;
+  color: var(--color-grey-dark);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-// TYPOGRAPHY
-p {
-  font-family: 'lato', sans-serif;
-  line-height: 1.8;
-  font-size: 1.5rem;
-  letter-spacing: 1px;
-}
-
-.text-reg {
-  font-family: 'lato', sans-serif;
-  line-height: 1.8;
-  font-size: 1.5rem;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  padding: 1rem 3rem;
-  font-size: 3.5rem;
-  width: max-content;
-
-  &__white {
-    color: #50465E;
-    background-color: white;
-    box-shadow: 0 3px 10px rgba(0,0,10px,.2);
-  }
-  &__purple {
-    color: white;
-    background-color: #50465E;
-  }
-}
-
-.title {
-  &__xs {
-    font-size: 2rem;
-    line-height: 1.2;
-  }
-}
-
-.text {
-  &__min {
-    text-transform: uppercase;
-    font-family: 'Source Sans Pro', sans-serif;
-    color: #797979;
-    font-size: 1.3rem;
-  }
-}
-
-//BUTTONS
-.button__sm,
-.button__sm:visited  {
-    color: #2A2A2B;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 1.6rem;
-    transition: .15s ease;
-    padding: 1rem;
-  }
-
-.button__sm:hover {
-    transform: translateY(-2px);
-}
-
-.button__lg,
-.button__lg:visited {
-  color: white;
-  background-color: #50465E;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 1.6rem;
-  transition: .15s ease;
-  padding: 1rem 2rem;
-  box-shadow: 0 3px 15px rgba(0,0,0,.3);
-}
-
-.button__lg:hover {
-  box-shadow: 0 0px 0px rgba(0,0,0,0);
-}
+@import "scss/Responsive.scss";
 </style>

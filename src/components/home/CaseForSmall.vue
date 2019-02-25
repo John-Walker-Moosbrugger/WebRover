@@ -10,7 +10,7 @@
             Narrow mission profiles on a flexible platform<br>
         </p>
     </div>
-    <img src="../assets/home/man-vs-cuberover.png" alt="" class="img">
+    <img src="../../assets/home/man-vs-cuberover.png" alt="" class="img">
     <div id="purple"></div>
 </div>
 </template>
@@ -54,5 +54,28 @@
     z-index: -10;
     background-color: #50465E;
     grid-area: 2 / 1 / 3 / 3;
+}
+
+@media only screen and (max-width: 1000px) {
+  .case {
+    grid-template-columns: 1fr;
+    grid-template-rows: 20rem 20rem min-content;
+  }
+
+  .text {
+    width: 80%;
+    justify-self: center;
+    grid-row-start: 3;
+    &__body {
+      color: var(--color-grey-dark);
+      padding: 2rem 3rem;
+    }
+  }
+
+  .img {
+    justify-self: center;
+    height: 40rem;
+    grid-column-start: 1;
+  }
 }
 </style>
