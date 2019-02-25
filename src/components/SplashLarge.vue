@@ -22,7 +22,7 @@ export default {
 
     &__img {
         max-height: 60rem;
-        max-width: 90%;
+        max-width: 70%;
         grid-row-start: 1;
         grid-row-end: 3;
         grid-column-start: 1;
@@ -58,7 +58,7 @@ export default {
 //RESPONSIFY
 @media only screen and (max-width: 1100px) {
   .title {
-    font-size: 7rem;
+    font-size: 8.5rem;
 
     &__purple {
       padding: 0 5rem;
@@ -70,17 +70,74 @@ export default {
   }
 
   .splash-large {
-    grid-template-rows: 1fr 21.5rem;
+    grid-template-rows: 1fr 24.5rem;
   }
 }
 
-@media only screen and (max-width: 900px) {
-  .title {
-    font-size: 6rem;
+@media only screen and (max-width: 1000px) {
+  .splash-large {
+    &__img {
+      max-height: 50rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .splash-large {
+    grid-template-rows: 1fr 22rem;
   }
 
+  .title {
+    font-size: 7rem;
+  }
+}
+
+@media only screen and (max-width: 650px) {
   .splash-large {
-    grid-template-rows: 1fr 18rem;
+    grid-template-rows: 1fr 17rem;
+  }
+  .title {
+    font-size: 5.5rem;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .splash-large {
+    grid-template-rows: 1fr 14rem;
+    &__img {
+      max-height: 30rem;
+    }
+  }
+  .title {
+    font-size: 4.5rem;
+
+    &__purple {
+      padding: .2rem 2.5rem;
+    }
+
+    &__white {
+      padding: .2rem 2.5rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .splash-large {
+    grid-template-rows: 1fr 13rem;
+    &__img {
+      max-height: 25rem;
+    }
+  }
+  .title {
+    font-size: 3.8rem;
+
+    &__purple {
+      padding: .3rem 2.5rem;
+    }
+
+    &__white {
+      padding: .3rem 2.5rem;
+    }
   }
 }
 </style>

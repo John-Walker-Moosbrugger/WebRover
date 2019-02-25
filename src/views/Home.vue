@@ -128,14 +128,41 @@ export default {
   .partners {
     grid-area: 22 / 2 / 23 / 3;
   }
+@media only screen and (max-width: 1000px) {
+  #home {
+    grid-template-rows: auto 65rem 15rem auto 10rem repeat(2, 20rem) 27rem auto 25rem 13rem 11rem min-content 20rem min-content min-content;
+  }
+  #case {
+    &__left {
+      grid-row: 7 / 8;
+      height: 20rem;
+    }
 
+    &__right {
+      grid-row: 7 / 8;
+      height: 20rem;
+    }
+  }
+}
+@media only screen and (max-width: 850px) {
+  #home {
+    grid-template-rows: auto 50rem 8rem auto 10rem repeat(2, 20rem) 27rem auto 10rem 13rem 11rem min-content 8rem min-content min-content;
+  }
+}
 @media only screen and (max-width: 750px) {
   #home {
     grid-template-columns: minmax(5rem, 1fr) minmax(20rem, 114rem) minmax(5rem, 1fr);
+    grid-template-rows: auto 55rem 8rem auto 10rem repeat(2, 20rem) 27rem auto 10rem 13rem 11rem min-content 8rem min-content min-content;
+  }
+}
+@media only screen and (max-width: 650px) {
+  #home {
+    grid-template-rows: auto 41rem 8rem auto 10rem repeat(2, 20rem) 27rem auto 10rem 13rem 11rem min-content 8rem min-content min-content;
   }
 }
 @media only screen and (max-width: 450px) {
   #home {
+    grid-template-rows: auto 32rem 8rem auto 10rem repeat(2, 20rem) 27rem auto 10rem 13rem 11rem min-content 8rem min-content min-content;
     grid-template-columns: minmax(2rem, 1fr) minmax(20rem, 114rem) minmax(2rem, 1fr);
   }
 }

@@ -78,4 +78,10 @@
     grid-column-start: 1;
   }
 }
+
+@media only screen and (max-width: 1000px) {
+  .text {
+    width: 100%;
+  }
+}
 </style>
