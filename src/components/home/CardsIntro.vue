@@ -42,4 +42,15 @@ export default {
         }
     }
 }
+
+@media only screen and (max-width: 1000px) {
+  .intro {
+    grid-template-columns: 1fr;
+
+    &__card {
+        max-width: 60rem;
+        justify-self: center;
+    }
+  }
+}
 </style>

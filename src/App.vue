@@ -26,8 +26,10 @@ html {
 #app {
   line-height: 1.6;
   font-family: 'Source Sans Pro', sans-serif;
-  color: #2A2A2B;
+  color: var(--color-grey-dark);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+@import "scss/Responsive.scss";
 </style>
